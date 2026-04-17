@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm --filter @workspace/lecaffee build",
+  "outputDirectory": "artifacts/lecaffee/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null
+}
