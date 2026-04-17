@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
-import logoPath from "@assets/WhatsApp_Image_2026-02-11_at_03.31.08_1776440071689.jpeg";
+const logoPath = "/logo.jpeg";
 
 const navLinks = [
   { label: "Home", href: "/" },

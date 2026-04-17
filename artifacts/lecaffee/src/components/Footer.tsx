@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Twitter, Mail, Phone, Clock, MapPin } from "lucide-react";
-import logoPath from "@assets/WhatsApp_Image_2026-02-11_at_03.31.08_1776440071689.jpeg";
+const logoPath = "/logo.jpeg";
 
 export default function Footer() {
   return (
