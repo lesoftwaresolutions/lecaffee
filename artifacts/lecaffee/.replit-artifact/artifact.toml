@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Lecaffee Coffee Shop"
+version = "1.0.0"
+id = "artifacts/lecaffee"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19133
+
+[services.development]
+run = "pnpm --filter @workspace/lecaffee run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lecaffee", "run", "build" ]
+publicDir = "artifacts/lecaffee/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19133"
+BASE_PATH = "/"

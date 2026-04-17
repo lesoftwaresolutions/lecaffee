@@ -16,6 +16,22 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### Lecaffee Coffee Shop (`artifacts/lecaffee`)
+- **Type**: React + Vite, frontend-only (no backend)
+- **Preview path**: `/`
+- **Stack**: React, TypeScript, Tailwind CSS, wouter, shadcn/ui
+- **Pages**: Home, Menu, Blog, Contact, Franchise, Order Online
+- **Key files**:
+  - `src/data/menuData.ts` — all menu items (60+ items with UK pricing)
+  - `src/pages/` — all page components
+  - `src/components/Navbar.tsx` — sticky navigation
+  - `src/components/Footer.tsx` — footer with hours, contact, locations
+  - `public/logo.jpeg` — Lecaffee logo (also used as favicon)
+- **Brand**: Forest green (#1a3a2a), warm cream (#f0e8d8), amber (#c8873a)
+- **Contact**: info@lecaffee.co.uk, +44 7393454245, Hastings & Eastbourne
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
