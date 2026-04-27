@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, MessageCircle, Navigation, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Navigation, Clock, Facebook, Instagram } from "lucide-react";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -193,6 +193,39 @@ export default function Contact() {
                     <Navigation size={14} style={{ color: "#fff" }} />
                   </div>
                   <span className="text-sm font-medium">Get Directions</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Follow Us */}
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <h3 className="font-bold text-base mb-4" style={{ color: "#1a3a2a" }}>Follow Us</h3>
+              <div className="space-y-3">
+                <a
+                  href="https://www.facebook.com/share/17LrN5MmrR/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-xl transition-all hover:shadow-sm"
+                  style={{ backgroundColor: "#f5f0e8", color: "#1a3a2a" }}
+                  data-testid="button-social-facebook"
+                >
+                  <div className="p-2 rounded-lg" style={{ backgroundColor: "#1877F2" }}>
+                    <Facebook size={14} style={{ color: "#fff" }} />
+                  </div>
+                  <span className="text-sm font-medium">Facebook</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/lecaffee_coffee_shop?igsh=MXQzeTFuZ3BzbzZsMg%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-xl transition-all hover:shadow-sm"
+                  style={{ backgroundColor: "#f5f0e8", color: "#1a3a2a" }}
+                  data-testid="button-social-instagram"
+                >
+                  <div className="p-2 rounded-lg" style={{ background: "linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)" }}>
+                    <Instagram size={14} style={{ color: "#fff" }} />
+                  </div>
+                  <span className="text-sm font-medium">Instagram</span>
                 </a>
               </div>
             </div>

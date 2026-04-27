@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Instagram, Twitter, Mail, Phone, Clock, MapPin } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, Clock, MapPin } from "lucide-react";
 const logoPath = "/logo.jpeg";
 
 export default function Footer() {
@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/17LrN5MmrR/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full transition-colors hover:text-white"
@@ -39,7 +39,7 @@ export default function Footer() {
                 <Facebook size={16} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/lecaffee_coffee_shop?igsh=MXQzeTFuZ3BzbzZsMg%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full transition-colors hover:text-white"
@@ -48,17 +48,6 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram size={16} />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-full transition-colors hover:text-white"
-                style={{ backgroundColor: "rgba(255,255,255,0.06)", color: "#8a7a64" }}
-                data-testid="link-social-twitter"
-                aria-label="Twitter"
-              >
-                <Twitter size={16} />
               </a>
             </div>
           </div>
